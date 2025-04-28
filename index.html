@@ -107,6 +107,24 @@
       loop: true
     });
   </script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+
+<!-- Initialization -->
+<script>
+  $(document).ready(function() {
+    $('.button-collapse').sideNav({
+      menuWidth: 190, // Set sidebar width
+      edge: 'left',   // Sidebar appears from left
+      closeOnClick: true, // Close on menu item click
+      draggable: true // Allow dragging on touch screens
+    });
+    $(".scrollspy").scrollSpy(); // Enable scrollspy
+  });
+</script>
 
 </body>
 
