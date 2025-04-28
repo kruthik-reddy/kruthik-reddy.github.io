@@ -183,7 +183,3 @@ ul.side-nav.fixed li a.active {
     font-size: 20px;
   }
 }
-/* Smooth scrolling behavior for anchor links */
-html {
-  scroll-behavior: smooth;
-}
