@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Sai Kruthik Reddy | Data Engineer</title>
+
+  <title>Sai Kruthik Reddy | Python Data Engineer</title>
 
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
@@ -12,8 +13,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <!-- Custom Styles -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+
   <!-- Typed.js -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- SEO + OpenGraph -->
+  <meta property="og:title" content="Sai Kruthik Reddy | Data Engineer Portfolio" />
+  <meta property="og:description" content="Portfolio website of Sai Kruthik Reddy - Data Engineer skilled in Python, Big Data, Cloud Technologies" />
+  <meta property="og:image" content="./assets/img/HeadShot.jpeg" />
+  <meta property="og:url" content="https://kruthik-reddy.github.io/" />
+  <meta name="google-site-verification" content="your-google-site-verification-code" />
 
   <style>
     html {
@@ -24,14 +33,20 @@
 
 <body>
 
-  <!-- Sidebar Navigation -->
+  <!-- Google Tag Manager (NoScript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Navigation Sidebar -->
   <nav class="hide-on-small-only">
-    <ul class="side-nav fixed">
+    <ul class="side-nav fixed section table-of-contents">
+
       <li class="logo">
         <a href="#intro" class="brand-logo">
-          <img src="./assets/img/HeadShot.jpeg" class="circle profile-pic" alt="avatar">
+          <img src="./assets/img/HeadShot.jpeg" class="circle profile-pic" alt="Sai Kruthik Reddy">
         </a>
       </li>
+
       <li class="bold"><a href="#about" class="waves-effect waves-dark teal-text">About</a></li>
       <li class="bold"><a href="#experience" class="waves-effect waves-dark teal-text">Experience</a></li>
       <li class="bold"><a href="#projects" class="waves-effect waves-dark teal-text">Projects</a></li>
@@ -43,6 +58,7 @@
           <i class="fa fa-download"></i> Download Resume
         </a>
       </li>
+
     </ul>
   </nav>
 
@@ -69,6 +85,7 @@
 
     <!-- Intro Section -->
     <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
       <div class="container center-align" style="margin-top: 15vh;">
         <h2 style="font-weight: 700;">Hi, I'm <span class="teal-text">Sai Kruthik Reddy</span></h2>
         <h5><span class="typing" style="font-weight:300;color:#004d40;"></span></h5>
@@ -95,13 +112,176 @@
       <div class="container">
         <h3 class="page-title teal-text">About</h3>
         <p>
-          Motivated Python Data Engineer with expertise in machine learning, cloud technologies (AWS, GCP), and scalable systems development. Seeking challenging opportunities to solve real-world problems and build impactful solutions.
+          Passionate Data Engineer skilled in Python, Big Data technologies, and Cloud Platforms (AWS, GCP, Azure). Strong focus on building scalable data pipelines, real-time dashboards, and solving business problems using data-driven insights.
         </p>
-        <!-- Skills listed here -->
+        <p>
+          <b>Languages:</b> Python, SQL, Scala, Java<br>
+          <b>Databases:</b> PostgreSQL, MySQL, MongoDB, Snowflake<br>
+          <b>Frameworks/Tools:</b> Django, Plotly Dash, Apache Spark, Kafka, Hadoop, Airflow, Docker, Redis, Celery<br>
+          <b>Cloud Technologies:</b> AWS (S3, EC2, Lambda), GCP (BigQuery, Dataproc), Azure (Data Lake, Databricks)
+        </p>
+        <p>
+          Highly motivated to work on challenging real-world projects and continuously learn new technologies.
+        </p>
       </div>
     </section>
 
-    <!-- (You can continue your other sections: Experience, Projects, Skills, Education, Contact...) -->
+    <!-- Experience Section -->
+    <section id="experience" class="section scrollspy">
+      <div class="container">
+        <h3 class="page-title teal-text">Experience</h3>
+
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Data Analyst | ConnX AI</span>
+            <p><b>Nov 2024 – Present | New Jersey, USA</b></p>
+            <ul>
+              <li>Built real-time monitoring dashboards integrating Django, Plotly Dash, and BigPanda APIs.</li>
+              <li>Developed ETL pipelines with PostgreSQL, Redis, Celery, and Docker, automating incident SLA tracking.</li>
+              <li>Created observability solutions using the ELK stack to reduce incident response times by 25%.</li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Technologies: Django, Plotly, PostgreSQL, Redis, BigPanda, ELK Stack, Docker</span>
+          </div>
+        </div>
+
+        <!-- Add more experience cards if you have -->
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section scrollspy">
+      <div class="container">
+        <h3 class="page-title teal-text">Projects</h3>
+
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Real-Time SEPTA Monitoring Dashboard</span>
+            <ul>
+              <li>Designed a live dashboard to visualize transportation network status using Django and Plotly Dash.</li>
+              <li>Streamed real-time JSON data, integrated BigPanda incidents, and visualized SLA metrics dynamically.</li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Python, Django, Plotly, Kafka, BigPanda, Kibana</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Wine Quality Prediction on AWS</span>
+            <ul>
+              <li>Built a distributed machine learning model using Apache Spark MLlib on EC2 clusters.</li>
+              <li>Containerized the prediction service using Docker and deployed it on AWS EC2.</li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Java, Spark, Docker, AWS EC2</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section scrollspy">
+      <div class="container">
+        <h3 class="page-title teal-text">Skills</h3>
+        
+        <div class="row">
+
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <h5 class="teal-text">Programming Languages</h5>
+                <ul>
+                  <li>Python, Java, Scala, SQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <h5 class="teal-text">Frameworks & Tools</h5>
+                <ul>
+                  <li>Django, Plotly Dash, Apache Spark, Hadoop, Kafka, Airflow</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <h5 class="teal-text">Databases</h5>
+                <ul>
+                  <li>PostgreSQL, MongoDB, Snowflake, MySQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <h5 class="teal-text">Cloud Platforms</h5>
+                <ul>
+                  <li>AWS, GCP, Azure</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section scrollspy">
+      <div class="container">
+        <h3 class="page-title teal-text">Education</h3>
+
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">The University of Texas at Dallas</span>
+            <p><b>Master of Science, Business Analytics (AI Track)</b></p>
+            <p>July 2022 – May 2024 | Richardson, TX</p>
+            <p><b>Major:</b> Data Science | <b>Minor:</b> Applied Machine Learning</p>
+            <p><b>Relevant Courses:</b> Applied Machine Learning, Deep Learning, Big Data, SQL/NoSQL Databases, Time Series Analysis</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section scrollspy full-height">
+      <div class="container">
+        <h3 class="page-title teal-text">Contact</h3>
+
+        <p>
+          <a href="mailto:kruthikreddi@gmail.com" target="_blank" class="hoverline">
+            <i class="fa fa-envelope"></i> kruthikreddi@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <a href="https://www.linkedin.com/in/kruthik-reddy" target="_blank" class="hoverline">
+            <i class="fa fa-linkedin"></i> linkedin.com/in/kruthik-reddy
+          </a>
+        </p>
+
+        <p>
+          <a href="https://github.com/kruthik-reddy" target="_blank" class="hoverline">
+            <i class="fa fa-github"></i> github.com/kruthik-reddy
+          </a>
+        </p>
+
+      </div>
+    </section>
 
   </main>
 
@@ -121,7 +301,7 @@
     });
 
     var typed = new Typed('.typing', {
-      strings: ["Problem-Solver", "Developer", "Math Lover"],
+      strings: ["Data Engineer", "Cloud Enthusiast", "Problem Solver"],
       typeSpeed: 80,
       backSpeed: 40,
       loop: true
