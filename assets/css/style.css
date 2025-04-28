@@ -165,6 +165,14 @@ html {
     image-rendering: optimizeQuality;
     
   }
+  .side-nav.fixed {
+    height: 100vh; /* Full viewport height */
+    background-color: #fff; /* White sidebar */
+    overflow-y: auto; /* Scroll if needed */
+    top: 0; /* Align to top */
+    padding-top: 20px; /* Some breathing room from top */
+  }
+  
 
   #intro.section {
     height: auto;
