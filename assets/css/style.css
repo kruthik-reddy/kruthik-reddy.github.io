@@ -1,0 +1,15 @@
+
+.profile-pic {
+  position: relative;
+  max-width:130px;
+  max-height:130px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  margin: -31px; 
+  margin-left:-7px;
+  border: 6px solid rgba(0, 77, 64, 0.4); 
+  border-radius: 50% !important;
+}
+/* ... truncated for brevity ... */
+/* (Assume I insert the full CSS you shared earlier here) */
