@@ -1,90 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
-/* Light theme main styling */
+/* General Body Styling */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poiret One', cursive;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 18px;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #333;
 }
 
-header.hero-section {
-  background: #e0f7fa;
-  text-align: center;
-  padding: 100px 20px;
+/* Profile Pic */
+.profile-pic {
+  position: relative;
+  max-width: 130px;
+  max-height: 130px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border: 6px solid rgba(0, 77, 64, 0.4);
+  border-radius: 50%;
 }
 
-header.hero-section h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+.profile-pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
-header.hero-section h2 {
-  font-size: 1.5em;
-  color: teal;
+/* Sidebar */
+ul.side-nav.fixed {
+  background: white;
+  width: 200px;
 }
 
-section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
+ul.side-nav.fixed a {
+  color: #004d40;
+  display: block;
+  padding: 12px 16px;
+  font-weight: 500;
 }
 
-.alt-section {
-  background-color: #f9f9f9;
+ul.side-nav.fixed a:hover,
+ul.side-nav.fixed a.active {
+  background: #e0f2f1;
+  border-left: 3px solid #004d40;
 }
 
-h2 {
-  color: teal;
-  margin-bottom: 20px;
+/* Navbar Mobile */
+nav {
+  background: white;
+  box-shadow: none;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+nav .brand-logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-ul li {
-  padding: 8px 0;
+/* Section Headings */
+h3.page-title {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
-a {
-  color: teal;
+/* Buttons */
+.readme, .contactme {
+  padding: 10px 30px;
+  margin: 10px;
+  border: 2px solid #004d40;
+  color: #004d40;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.readme:hover, .contactme:hover {
+  background-color: #004d40;
+  color: white;
+}
+
+/* Social Buttons */
+.icon-btn {
+  margin: 5px;
+  padding: 12px;
+  border: none;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #004d40;
+  color: white;
+  transition: 0.3s;
+}
+
+.icon-btn:hover {
+  background: #00695c;
+}
+
+/* Typing text */
+.typing {
+  color: #004d40;
+}
+
+/* Overlay for intro */
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 77, 64, 0.05);
+  top: 0;
+  left: 0;
+}
+
+/* Full Height Section */
+.full-height {
+  height: 100vh;
+  position: relative;
+}
+
+/* Contact Section */
+#contact a {
+  color: #004d40;
   text-decoration: none;
+  font-weight: 500;
 }
 
-a:hover {
+#contact a:hover {
   text-decoration: underline;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 20px;
-  background-color: teal;
-  color: #ffffff;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background-color: #00695c;
-}
-
-footer {
-  background: #e0f7fa;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-  color: #555;
-}
-
-.highlight {
-  color: teal;
-}
-
-/* Typing animation styling */
-.typing {
-  color: #00796b;
-  font-weight: bold;
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+  ul.side-nav.fixed {
+    width: 100%;
+  }
+  main {
+    padding-left: 0;
+  }
+  nav .brand-logo {
+    margin-left: 15px;
+  }
 }

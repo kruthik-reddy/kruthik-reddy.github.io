@@ -1,73 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sai Kruthik Reddy Paduru | Python Data Engineer</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
-  <meta name="description" content="Portfolio of Sai Kruthik Reddy Paduru - Python Data Engineer and Software Developer.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Sai Kruthik Reddy | Data Engineer</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
-  <header class="hero-section">
-    <h1>Hi, I'm <span class="highlight">Sai Kruthik Reddy Paduru</span></h1>
-    <h2><span class="typing"></span></h2>
-    <a href="#contact" class="btn">Contact Me</a>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Python Data Engineer with strong foundations in machine learning, cloud services, distributed systems, and full-stack development. I am passionate about building scalable solutions and delivering insights through data-driven strategies.</p>
-  </section>
-
-  <section id="experience" class="alt-section">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>ConnX AI (Current)</strong> – Data Analyst Intern</li>
-      <li><strong>Intelligenie Software</strong> – Data Analyst Intern</li>
-      <li><strong>MSys Technologies</strong> – DevOps Intern</li>
-      <li><strong>10x Academy</strong> – Full Stack Trainee</li>
+  <!-- Sidebar Navigation -->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed">
+      <li class="logo">
+        <a href="#intro" class="brand-logo">
+          <img src="./assets/img/HeadShot.jpeg" class="circle profile-pic" alt="avatar">
+        </a>
+      </li>
+      <li class="bold"><a href="#about" class="waves-effect waves-dark teal-text">About</a></li>
+      <li class="bold"><a href="#experience" class="waves-effect waves-dark teal-text">Experience</a></li>
+      <li class="bold"><a href="#projects" class="waves-effect waves-dark teal-text">Projects</a></li>
+      <li class="bold"><a href="#skills" class="waves-effect waves-dark teal-text">Skills</a></li>
+      <li class="bold"><a href="#education" class="waves-effect waves-dark teal-text">Education</a></li>
+      <li class="bold"><a href="#contact" class="waves-effect waves-dark teal-text">Contact</a></li>
     </ul>
-  </section>
+  </nav>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>BeatBuddy:</strong> Multimodal Music Search and Recommendation System (Python, Flask, COLBERT, KNN)</li>
-    </ul>
-  </section>
+  <!-- Mobile Navbar -->
+  <nav class="hide-on-large only z-depth-1">
+    <div class="nav-wrapper white">
+      <a href="#" class="brand-logo teal-text" style="margin-left:10px;">Sai Kruthik Reddy</a>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars teal-text"></i></a>
+    </div>
+  </nav>
 
-  <section id="skills" class="alt-section">
-    <h2>Skills</h2>
-    <p>Python, SQL, Cloud (Azure), Machine Learning (TensorFlow, Scikit-Learn), Data Analysis (Pandas, BigQuery), DevOps (Docker, GitHub Actions), Visualization (Looker Studio, Matplotlib, Seaborn)</p>
-  </section>
+  <ul id="slide-out" class="side-nav">
+    <li><a href="#about" class="teal-text">About</a></li>
+    <li><a href="#experience" class="teal-text">Experience</a></li>
+    <li><a href="#projects" class="teal-text">Projects</a></li>
+    <li><a href="#skills" class="teal-text">Skills</a></li>
+    <li><a href="#education" class="teal-text">Education</a></li>
+    <li><a href="#contact" class="teal-text">Contact</a></li>
+  </ul>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p><a href="assets/resume/SaiKruthikReddy_Resume.pdf" target="_blank" class="btn">Download My Resume (PDF)</a></p>
-  </section>
+  <!-- Main Content -->
+  <main>
+    <!-- Intro Section -->
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
+      <div class="container center-align" style="margin-top: 15vh;">
+        <h2>Hi, I'm <span class="teal-text">Sai Kruthik Reddy</span></h2>
+        <h5><span class="typing" style="font-weight:300;color:#004d40;"></span></h5>
+        <div class="social" style="margin-top:20px;">
+          <a href="https://www.linkedin.com/in/kruthik-reddy" target="_blank">
+            <button class="icon-btn linkedin"><i class="fa fa-linkedin"></i></button>
+          </a>
+          <a href="https://github.com/kruthik-reddy" target="_blank">
+            <button class="icon-btn github"><i class="fa fa-github"></i></button>
+          </a>
+          <a href="mailto:kruthikreddi@gmail.com">
+            <button class="icon-btn email"><i class="fa fa-envelope"></i></button>
+          </a>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="#about" class="readme">Read More</a>
+          <a href="#contact" class="contactme">Contact Me</a>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact" class="alt-section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:kruthikreddi@gmail.com">kruthikreddi@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/kruthik-reddy" target="_blank">linkedin.com/in/kruthik-reddy</a></p>
-    <p>GitHub: <a href="https://github.com/kruthik-reddy" target="_blank">github.com/kruthik-reddy</a></p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="section scrollspy">
+      <div class="container">
+        <h3 class="page-title teal-text">About</h3>
+        <p>Motivated Python Data Engineer with a focus on machine learning, cloud technologies, and scalable systems.</p>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Sai Kruthik Reddy Paduru</p>
-  </footer>
+    <!-- Other Sections (Experience, Projects, Skills, Education, Contact) -->
+    <!-- Add content here when ready -->
+  </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
   <script>
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy();
+      $(".button-collapse").sideNav();
+    });
     var typed = new Typed('.typing', {
-      strings: ["Problem Solver", "Data Engineer", "Developer", "AI Enthusiast"],
+      strings: ["Problem-Solver", "Developer", "Math Lover"],
       typeSpeed: 80,
-      backSpeed: 40,
+      backSpeed: 50,
       loop: true
     });
   </script>
+
 </body>
+
 </html>
