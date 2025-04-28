@@ -76,13 +76,17 @@ h3.page-title {
   font-size: 14px;
   background-color: transparent;
   border-radius: 5px;
-  transition: 0.3s;
+  display: inline-block; /* Important for a link to behave like a button */
+  transition: 0.3s ease;
+  text-align: center;
 }
 
 .readme:hover, .contactme:hover {
   background-color: #004d40;
   color: white;
 }
+
+
 
 /* Social Buttons */
 .icon-btn {
